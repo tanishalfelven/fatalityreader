@@ -70,6 +70,11 @@ function displayTidbit(record) {
 	$("#tidbits").append(tidbit);
 }
 
+function getBaseUrl() {
+	var re = window.location.href;
+	return re.substring(0, re.indexOf("?"));
+}
+
 $(document).ready(function() {
 	$("#datepicker").datepicker();
 	$("#datepicker").datepicker("option", "dateFormat", "mm/dd/y");
@@ -79,7 +84,7 @@ $(document).ready(function() {
 	}
 	$("#datepicker").datepicker("setDate", current);
 	$("#Go").click(function() {
-		window.location.replace(document.location.origin + "?date="+$('#datepicker').val());
+		window.location.replace(getBaseUrl() + "?date="+$('#datepicker').val());
 	});
 	loadOSHAData();
 
