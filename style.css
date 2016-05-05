@@ -1,0 +1,65 @@
+body {
+	margin:0;
+	padding:0;
+}
+
+#content {
+	font-family: Helvetica;
+}
+
+#header {
+	background-color: #55ACEE;
+	padding:10px;
+	color:white;
+	box-shadow: 0px 0px 5px 5px #888888;
+	margin-bottom:20px;
+}
+
+h1 {
+	margin:0;
+}
+
+#startdate {
+	text-align: center;
+}
+
+#tidbits {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.tidbit {
+	text-align:left;
+	padding:5px;
+	margin-bottom:15px;
+	box-shadow: 0px 1.5px 2px 2px #888888;
+	overflow:auto;
+	border-radius: 5px
+}
+
+.date, .company {
+	font-size: .8em;
+	color: gray;
+}
+
+.date {
+	float:right;
+}
+
+.company {
+	float:left;
+}
+
+#Go {
+	background-color: #55ACEE;
+	padding:5px;
+	color: white;
+	border-radius: 5px
+}
+
+#Go:hover {
+	cursor:pointer;
+	color: #55ACEE;
+	background-color:white;
+	text-decoration:underline; 
+}
